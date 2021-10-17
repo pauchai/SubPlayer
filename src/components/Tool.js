@@ -365,7 +365,7 @@ export default function Header({
                 const canPlayType = player.canPlayType(file.type);
                 if (canPlayType === 'maybe' || canPlayType === 'probably') {
                     setVideoFile(file);
-                    decodeAudioData(file);
+                    //decodeAudioData(file);
                     const url = URL.createObjectURL(new Blob([file]));
                     waveform.decoder.destroy();
                     waveform.drawer.update();
